@@ -1,0 +1,21 @@
+.logo {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #afa793;
+}
+.menuFooter {
+  text-align: center;
+  li {
+    padding: 0 8px;
+    a {
+      &.current:before,
+      &.current:after {
+        width: 50%;
+      }
+    }
+  }
+}

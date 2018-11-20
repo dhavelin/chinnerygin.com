@@ -1,0 +1,33 @@
+.logo {
+  margin: 16px 16px 0 16px;
+  a {
+    display: block;
+  }
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+li {
+  display: inline-block;
+}
+.menuMain {
+  margin-top: 16px;
+  li {
+    padding: 0 8px;
+    a {
+      &.current:before,
+      &.current:after {
+        width: 50%;
+      }
+    }
+  }
+}
+.menuSocial {
+  margin-top: 16px;
+  li {
+    padding: 0 4px;
+  }
+}
+
+

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:300,300i,400,500|Spectral+SC:300,400|Open+Sans:300,400');
+
+@mixin link-underline($color: blue, $size: 2px, $duration: 0.25s) {
+  color: #c51306;
+  line-height: 1.2;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  &:before {
+    background-color: #c51306;
+    content: '';
+    height: $size;
+    position: absolute;
+    bottom: 0;
+    transition: width $duration ease-in-out;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+.container {
+  font-family: 'Spectral', serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('../../static/images/paper.png');
+}
+h1, h2, h3, h4 {
+  font-family: 'Spectral SC', serif;
+}
+h1 {
+  font-weight: 300;
+}
+h2, h3, h4 {
+  font-weight: 400;
+}
+.main {
+  padding: 0;
+  flex-grow: 1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 1rem;
+  background-color: #18191b;
+  border-top: 3px solid #c51306;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #8a8068;
+    text-decoration: none;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      border-bottom: solid 1px #8a8068;
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+    &:hover:before,
+    &:hover:after {
+      width: 50%;
+    }
+  }
+}
+.footer nav a {
+  color: #afa793;
+}
+article {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  line-height: 2em;
+  max-width: 700px;
+
+  strong {
+    font-weight: 500;
+  }
+
+  a:not([name]) {
+    @include link-underline(blue, 1px, 0.2s);
+  }
+
+  nav {
+    text-align: center;
+    margin-bottom: 0.5em;
+    a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 0 0.5em;
+    }
+  }
+
+  h1 {
+    font-family: 'Spectral SC', serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 2.5px;
+    font-size: 2.4rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    &.subtitle {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 0.4rem;
+      color: #c51306;
+      line-height: 1;
+      letter-spacing: 2px;
+    }
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+    cite {
+      font-size: 1.1rem;
+    }
+  }
+
+  .byline {
+    font-style: italic;
+    margin-top: -1rem;
+  }
+
+  form{
+    label {
+      font-weight: 400 !important;
+      font-size: 1.3rem !important;
+      padding-bottom: 1rem !important;
+    }
+    input[type=submit] {
+      margin-bottom: 2em !important;
+      outline-color: #c51306;
+    }
+  }
+
+}
+.botanicals {
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto 2em auto;
+
+  figure {
+    width: 300px;
+    position: relative;
+    margin: 10px;
+
+    div {
+      background: #fff;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+  }
+  figcaption {
+    width: 100%;
+    z-index: 50;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding-left: 1em;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.frontmain {
+  padding: 6rem 2rem;
+  background: url("../images/willow.jpg");
+  .frontimage {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
