@@ -12,10 +12,6 @@
   li {
     padding: 0 8px;
     a {
-      &.current:before,
-      &.current:after {
-        width: 50%;
-      }
     }
   }
 }

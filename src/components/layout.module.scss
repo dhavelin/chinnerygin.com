@@ -1,26 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral:300,300i,400,500|Spectral+SC:300,400|Open+Sans:300,400');
 
-@mixin link-underline($color: blue, $size: 2px, $duration: 0.25s) {
+@mixin link-simple() {
   color: #c51306;
   line-height: 1.2;
-  display: inline-block;
-  position: relative;
   text-decoration: none;
-  &:before {
-    background-color: #c51306;
-    content: '';
-    height: $size;
-    position: absolute;
-    bottom: 0;
-    transition: width $duration ease-in-out;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   &:hover {
-    &:before {
-      width: 0;
-    }
+    text-decoration: underline;
   }
 }
 
@@ -75,30 +60,14 @@ h2, h3, h4 {
 .footer {
   nav a {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
     font-weight: 400;
     letter-spacing: 1px;
     color: #8a8068;
     text-decoration: none;
     position: relative;
-    &:before,
-    &:after {
-      content: '';
-      border-bottom: solid 1px #8a8068;
-      position: absolute;
-      bottom: 0;
-      width: 0;
-      -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-    }
-    &:before {
-      left: 0;
-    }
-    &:after {
-      right: 0;
-    }
-    &:hover:before,
-    &:hover:after {
-      width: 50%;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -116,7 +85,12 @@ article {
   }
 
   a:not([name]) {
-    @include link-underline(blue, 1px, 0.2s);
+    color: #c51306;
+    line-height: 1.2;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   nav {
