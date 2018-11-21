@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import styles from "../components/layout.module.scss"
 
@@ -15,6 +16,9 @@ var position = {
 
 export default ({data}) => (
   <Layout>
+    <Helmet>
+      <title>Newsletter</title>
+    </Helmet>
     <article>
       <p className={styles.subtitle}>Stay in touch</p>
       <h1>Newsletter</h1>

@@ -1,10 +1,14 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import styles from "../components/layout.module.scss"
 import Img from "gatsby-image"
 
 export default ({data}) => (
   <Layout>
+    <Helmet>
+      <title>Chinnery Gin</title>
+    </Helmet>
     <article>
       <p className={styles.subtitle}>The Gin</p>
       <h1>Chinnery Gin</h1>

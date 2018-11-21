@@ -1,10 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Layout from "../components/layout";
 import styles from "../components/layout.module.scss"
 
 export default ({data}) => (
   <Layout>
+    <Helmet>
+      <title>Chinnery Gin</title>
+    </Helmet>
     <div className={styles.frontmain}>
       <div className={styles.frontimage}>
         <Img fluid={data.bottle.childImageSharp.fluid} />

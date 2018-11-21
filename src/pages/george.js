@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import styles from "../components/layout.module.scss"
 import Fig from "../components/fig"
@@ -6,6 +7,9 @@ import Quote from "../components/quote"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>The artist George Chinnery</title>
+    </Helmet>
     <article>
       <p className={styles.subtitle}>The Artist</p>
       <h1>George Chinnery</h1>
