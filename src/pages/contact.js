@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 export default () => (
   <Layout>
     <Helmet>
-      <title>Contact us</title>
+      <title>Contact us | Chinnery Gin</title>
     </Helmet>
     <article>
       <h1>Contact Us</h1>

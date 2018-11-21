@@ -17,7 +17,7 @@ var position = {
 export default ({data}) => (
   <Layout>
     <Helmet>
-      <title>Newsletter</title>
+      <title>Newsletter | Chinnery Gin</title>
     </Helmet>
     <article>
       <p className={styles.subtitle}>Stay in touch</p>

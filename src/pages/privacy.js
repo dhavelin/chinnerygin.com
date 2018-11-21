@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 export default () => (
   <Layout>
     <Helmet>
-      <title>Privacy statement</title>
+      <title>Privacy statement | Chinnery Gin</title>
     </Helmet>
     <article>
       <h1>Privacy Policy</h1>

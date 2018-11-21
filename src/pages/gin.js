@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default ({data}) => (
   <Layout>
     <Helmet>
-      <title>Chinnery Gin</title>
+      <title>About the gin | Chinnery Gin</title>
     </Helmet>
     <article>
       <p className={styles.subtitle}>The Gin</p>

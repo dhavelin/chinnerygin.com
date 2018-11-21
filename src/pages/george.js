@@ -8,7 +8,7 @@ import Quote from "../components/quote"
 export default () => (
   <Layout>
     <Helmet>
-      <title>The artist George Chinnery</title>
+      <title>George Chinnery, artist | Chinnery Gin</title>
     </Helmet>
     <article>
       <p className={styles.subtitle}>The Artist</p>
