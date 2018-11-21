@@ -7,7 +7,7 @@ import styles from "./header.module.scss"
 export default () => (
   <>
     <div className={styles.logo}>
-      <Link to="/">
+      <Link to="/" aria-label="Home page">
         <Image />
       </Link>
     </div>
@@ -20,9 +20,9 @@ export default () => (
     </nav>
     <nav className={styles.menuSocial}>
       <ul>
-        <li><a href="https://www.facebook.com/chinnerygin">< FaFacebook /></a></li>
-        <li><a href="https://www.instagram.com/chinnerygin">< FaInstagram /></a></li>
-        <li><a href="https://www.twitter.com/chinnerygin">< FaTwitter /></a></li>
+        <li><a href="https://www.facebook.com/chinnerygin" aria-label="Facebook">< FaFacebook /></a></li>
+        <li><a href="https://www.instagram.com/chinnerygin" aria-label="Instagram">< FaInstagram /></a></li>
+        <li><a href="https://www.twitter.com/chinnerygin" aria-label="Twitter">< FaTwitter /></a></li>
       </ul>
     </nav>
   </>
@@ -41,6 +41,6 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.logo.childImageSharp.fixed}/>}
+    render={data => <Img fixed={data.logo.childImageSharp.fixed} alt="Chinnery Spirits logo"/>}
   />
 )

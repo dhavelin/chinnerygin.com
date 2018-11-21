@@ -15,7 +15,7 @@ export default () => (
       </ul>
     </nav>
     <div className={styles.logo}>
-      <Link to="/"><Image /></Link>
+      <Link to="/" aria-label="Home page"><Image /></Link>
     </div>
     <p className={styles.copyright}>© Chinnery Spirits Ltd 2018</p>
   </>
