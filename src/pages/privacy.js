@@ -7,6 +7,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>Privacy statement | Chinnery Gin</title>
+      <meta name="Description" content="Chinnery Spirits respects your right to privacy." />
     </Helmet>
     <article>
       <h1>Privacy Policy</h1>

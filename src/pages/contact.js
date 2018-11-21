@@ -6,6 +6,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>Contact us | Chinnery Gin</title>
+      <meta name="Description" content="We welcome comments and questions by email (or post)." />
     </Helmet>
     <article>
       <h1>Contact Us</h1>

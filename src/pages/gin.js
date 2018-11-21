@@ -8,6 +8,7 @@ export default ({data}) => (
   <Layout>
     <Helmet>
       <title>About the gin | Chinnery Gin</title>
+      <meta name="Description" content="About Chinnery Gin, the botanicals used - osmanthus, oolong, cassia, juniper, coriander, liquorice, orange peel, grains of paradise, angelica, orris - how it's distilled and tasting notes." />
     </Helmet>
     <article>
       <p className={styles.subtitle}>The Gin</p>

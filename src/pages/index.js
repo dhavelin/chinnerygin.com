@@ -8,6 +8,7 @@ export default ({data}) => (
   <Layout>
     <Helmet>
       <title>Chinnery Gin</title>
+      <meta name="Description" content="Chinnery Gin captures the Old China Trade in a bottle. Catch the wonderfully fragrant aroma of osmanthus flowers—the scent of Canton itself. Taste the gin and experience the flavours of the Old China Trade, from spicy cassia bark to a very special single variety of oolong tea." />
     </Helmet>
     <div className={styles.frontmain}>
       <div className={styles.frontimage}>

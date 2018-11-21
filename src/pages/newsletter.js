@@ -18,6 +18,7 @@ export default ({data}) => (
   <Layout>
     <Helmet>
       <title>Newsletter | Chinnery Gin</title>
+      <meta name="Description" content="Subscribe to our newsletter to get the latest news from the world of Chinnery Gin - upcoming events, new products, new articles on the blog, etc." />
     </Helmet>
     <article>
       <p className={styles.subtitle}>Stay in touch</p>

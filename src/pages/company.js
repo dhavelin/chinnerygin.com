@@ -6,6 +6,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>Company details | Chinnery Gin</title>
+      <meta name="Description" content="Chinnery Spirits Ltd is a registered company in Ireland." />
     </Helmet>
     <article>
       <h1>Company Details</h1>

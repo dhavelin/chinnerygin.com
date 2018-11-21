@@ -9,6 +9,7 @@ export default () => (
   <Layout>
     <Helmet>
       <title>George Chinnery, artist | Chinnery Gin</title>
+      <meta name="Description" content="About the artist, George Chinnery. His early career in Dublin, his travels to India and southern China, his importance in documenting the Old China Trade." />
     </Helmet>
     <article>
       <p className={styles.subtitle}>The Artist</p>
