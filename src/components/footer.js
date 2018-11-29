@@ -1,8 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-import { StaticQuery, Link } from "gatsby"
+import { StaticQuery, Link, graphql } from "gatsby"
 import styles from "./footer.module.scss"
-import logo from "../../static/images/logo.png"
 
 export default () => (
   <>

@@ -17,7 +17,7 @@ export default ({data}) => (
       <nav className={styles.page}>
         <a href="#botanicals">Botanicals</a> <a href="#distillation">Distillation</a> <a href="#tasting">Tasting notes</a>
       </nav>
-      <h2 id="a-name-botanicals-a-botanicals"><a name="botanicals">Botanicals</a></h2>
+      <h2 id="botanicals">Botanicals</h2>
       <p>We searched the wholesale tea market at Canton for a very particular variety of oolong tea and combined it with cassia bark (sometimes known as Chinese cinnamon and often used in place of cinnamon) and osmanthus, a  flower with a wonderfully sweet fragrance that is redolent of the very streets of Canton.</p>
       <p>The full recipe for Chinnery Gin incorporates ten botanicals:</p>
     </article>
@@ -66,7 +66,7 @@ export default ({data}) => (
       </div>
     <article>
 
-      <h2 id="a-name-distillation-a-distillation"><a name="distillation"></a>Distillation</h2>
+      <h2 id="distillation">Distillation</h2>
 
       <p>Most good gins begin by infusing a batch of botanicals in a large pot of neutral alcohol for up to a day. The pot is then heated above 78°C so that the alcohol turns to vapour. The vapour is condensed and collected as a clear spirit which carries just the essence of the original botanicals.</p>
 
@@ -76,7 +76,7 @@ export default ({data}) => (
 
       <p>We are also distilling these two botanicals under a high vacuum, which lowers the temperature at which alcohol vaporises. Thus we can avoid cooking or even burning the botanicals, and can extract more delicate and natural flavours than would be possible using the conventional method.</p>
 
-      <h2 id="a-name-tasting-a-tasting-notes"><a name="tasting"></a>Tasting notes</h2>
+      <h2 id="tasting">Tasting notes</h2>
 
       <p className={styles.byline}>by Rachel Lindsay</p>
 
