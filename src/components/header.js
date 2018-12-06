@@ -16,6 +16,7 @@ export default () => (
         <li><Link to="/gin/" activeClassName={styles.current}>The Gin</Link></li>
         <li><Link to="/george/" activeClassName={styles.current}>The Artist</Link></li>
         <li><Link to="/newsletter/" activeClassName={styles.current}>Newsletter</Link></li>
+        <li><Link to="/stockists/" activeClassName={styles.current}>Stockists</Link></li>
       </ul>
     </nav>
     <nav className={styles.menuSocial}>

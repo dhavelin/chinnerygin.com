@@ -25,5 +25,8 @@ li {
     padding: 0 4px;
   }
 }
+nav li a.current {
+  text-decoration: underline;
+}
 
 
