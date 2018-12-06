@@ -26,6 +26,16 @@ h1 {
 h2, h3, h4 {
   font-weight: 400;
 }
+h2.county {
+  margin-top: 2.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  border-color: mistyrose;
+  text-align: center;
+  color: #333;
+  background-color: lavenderblush;
+}
 .main {
   padding: 0;
   flex-grow: 1;
