@@ -320,6 +320,16 @@
     ]
   },
   {
+    "county": "Wexford",
+    "outlets": [
+      {
+        "name": "Next Door",
+        "address": "25 Main Street, Gorey, Co. Wexford",
+        "url": "http://www.nextdoor.ie/gorey.316.html"
+      }
+    ]
+  },
+  {
     "county": "Wicklow",
     "outlets": [
       {
