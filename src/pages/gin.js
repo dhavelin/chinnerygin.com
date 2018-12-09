@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import styles from "../components/layout.module.scss"
@@ -22,48 +23,48 @@ export default ({data}) => (
       <p>The full recipe for Chinnery Gin incorporates ten botanicals:</p>
     </article>
 
-      <div className={styles.botanicals}>
-        <figure>
-          <figcaption>Osmanthus Flower</figcaption>
-          <Img fixed={data.osmanthus.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Oolong Tea</figcaption>
-          <Img fixed={data.oolong.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Cassia Bark</figcaption>
-          <Img fixed={data.cassia.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Juniper</figcaption>
-          <Img fixed={data.juniper.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Coriander Seed</figcaption>
-          <Img fixed={data.coriander.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Liquorice Root</figcaption>
-          <Img fixed={data.liquorice.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Sweet Orange Peel</figcaption>
-          <Img fixed={data.orange.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Grains of Paradise</figcaption>
-          <Img fixed={data.grainsofparadise.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Angelica Root</figcaption>
-          <Img fixed={data.angelica.childImageSharp.fixed} />
-        </figure>
-        <figure>
-          <figcaption>Orris Root</figcaption>
-          <Img fixed={data.orris.childImageSharp.fixed} />
-        </figure>
-      </div>
+    <div className={styles.botanicals}>
+      <figure>
+        <figcaption>Osmanthus Flower</figcaption>
+        <Img fixed={data.osmanthus.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Oolong Tea</figcaption>
+        <Img fixed={data.oolong.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Cassia Bark</figcaption>
+        <Img fixed={data.cassia.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Juniper</figcaption>
+        <Img fixed={data.juniper.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Coriander Seed</figcaption>
+        <Img fixed={data.coriander.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Liquorice Root</figcaption>
+        <Img fixed={data.liquorice.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Sweet Orange Peel</figcaption>
+        <Img fixed={data.orange.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Grains of Paradise</figcaption>
+        <Img fixed={data.grainsofparadise.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Angelica Root</figcaption>
+        <Img fixed={data.angelica.childImageSharp.fixed} />
+      </figure>
+      <figure>
+        <figcaption>Orris Root</figcaption>
+        <Img fixed={data.orris.childImageSharp.fixed} />
+      </figure>
+    </div>
     <article>
 
       <h2 id="distillation">Distillation</h2>
