@@ -4,7 +4,7 @@
     "outlets": [
       {
         "name": "O'Briens",
-        "address": "2&3 Exchequer House, Potato Market, Co. Carlow",
+        "address": "2&3 Exchequer House, Potato Market, Carlow, Co. Carlow",
         "url": "https://www.obrienswine.ie/"
       }
     ]
@@ -184,12 +184,17 @@
       },
       {
         "name": "O'Briens",
+        "address": "1 Main Street, Malahide, Co. Dublin",
+        "url": "https://www.obrienswine.ie/"
+      },
+      {
+        "name": "O'Briens",
         "address": "Unit 6, The Maple Centre, Navan Road, Dublin 7",
         "url": "https://www.obrienswine.ie/"
       },
       {
         "name": "O'Briens",
-        "address": "Unit D2B , Nutgrove Shopping Centre, Rathfarnham, Dublin 14",
+        "address": "Unit D2B, Nutgrove Shopping Centre, Rathfarnham, Dublin 14",
         "url": "https://www.obrienswine.ie/"
       },
       {
@@ -237,6 +242,11 @@
   {
     "county": "Kildare",
     "outlets": [
+      {
+        "name": "O'Briens",
+        "address": "Unit 20, Monread Shopping Centre, Naas, Co. Kildare",
+        "url": "https://www.obrienswine.ie/"
+      },
       {
         "name": "O'Briens",
         "address": "1 Courtyard Shopping Centre, Newbridge, Co. Kildare",
@@ -296,12 +306,22 @@
         "name": "O'Briens",
         "address": "14 Killegland Street, New Ashbourne Town Centre, Ashbourne, Co. Meath",
         "url": "https://www.obrienswine.ie/"
+      },
+      {
+        "name": "O'Briens",
+        "address": "3 Kennedy Road, Navan, Co. Meath",
+        "url": "https://www.obrienswine.ie/"
       }
     ]
   },
   {
     "county": "Waterford",
     "outlets": [
+      {
+        "name": "Ardkeen Quality Food Store",
+        "address": "Dunmore Road, Waterford, Co Waterford",
+        "url": "https://www.ardkeen.com/"
+      },
       {
         "name": "O'Briens",
         "address": "Unit 42, Ardkeen Shopping Centre, Dunmore Road, Waterford, Co Waterford",
@@ -335,6 +355,16 @@
       {
         "name": "O'Briens",
         "address": "2 Vevay Arcade, Vevay Road, Bray, Co Wicklow",
+        "url": "https://www.obrienswine.ie/"
+      },
+      {
+        "name": "O'Briens",
+        "address": "19 Quinsboro Road, Bray, Co Wicklow",
+        "url": "https://www.obrienswine.ie/"
+      },
+      {
+        "name": "O'Briens",
+        "address": "Church Road, Greystones, Co Wicklow",
         "url": "https://www.obrienswine.ie/"
       }
     ]
