@@ -329,12 +329,12 @@
     "outlets": [
       {
         "name": "Ardkeen Quality Food Store",
-        "address": "Dunmore Road, Waterford, Co Waterford",
+        "address": "Dunmore Road, Waterford, Co. Waterford",
         "url": "https://www.ardkeen.com/"
       },
       {
         "name": "O'Briens",
-        "address": "Unit 42, Ardkeen Shopping Centre, Dunmore Road, Waterford, Co Waterford",
+        "address": "Unit 42, Ardkeen Shopping Centre, Dunmore Road, Waterford, Co. Waterford",
         "url": "https://www.obrienswine.ie/"
       }
     ]
@@ -344,7 +344,7 @@
     "outlets": [
       {
         "name": "O'Briens",
-        "address": "4 Inis Carraig, Golden Island, Athlone, Co Westmeath",
+        "address": "4 Inis Carraig, Golden Island, Athlone, Co. Westmeath",
         "url": "https://www.obrienswine.ie/"
       }
     ]
@@ -364,17 +364,17 @@
     "outlets": [
       {
         "name": "O'Briens",
-        "address": "2 Vevay Arcade, Vevay Road, Bray, Co Wicklow",
+        "address": "2 Vevay Arcade, Vevay Road, Bray, Co. Wicklow",
         "url": "https://www.obrienswine.ie/"
       },
       {
         "name": "O'Briens",
-        "address": "19 Quinsboro Road, Bray, Co Wicklow",
+        "address": "19 Quinsboro Road, Bray, Co. Wicklow",
         "url": "https://www.obrienswine.ie/"
       },
       {
         "name": "O'Briens",
-        "address": "Church Road, Greystones, Co Wicklow",
+        "address": "Church Road, Greystones, Co. Wicklow",
         "url": "https://www.obrienswine.ie/"
       }
     ]
