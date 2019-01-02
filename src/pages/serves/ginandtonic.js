@@ -14,6 +14,8 @@ export default ({data}) => (
     <article className={styles.article}>
       <p className={styles.subtitle}>Serves</p>
       <h1>Chinnery Gin &amp; Tonic</h1>
+      <p>We wish we could ask George Chinnery what the original gin &amp; tonic tasted like. He likely sampled its earliest incarnation while living in India, where a mixture of water, sugar, lime and gin was added to the anti-malarial medicine quinine to make it more palatable.</p>
+      <p>This is our version.</p>
       <figure>
         <Img fluid={data.ginandtonic.childImageSharp.fluid} />
         <figcaption>Chinnery Gin &amp; Tonic</figcaption>
@@ -40,19 +42,10 @@ export default ({data}) => (
 export const query = graphql`
   query {
     ginandtonic: file(relativePath: { eq: "serves/ChinneryGinAndTonic.jpg" }) {
-      ...serveGinAndTonicImage
-    }
-    selfportrait: file(relativePath: { eq: "selfportrait.jpg" }) {
-      ...serveGinAndTonicImage
-    }
-  }
-`
-
-export const serveGinAndTonicImage = graphql`
-  fragment serveGinAndTonicImage on File {
-    childImageSharp {
-      fluid(maxWidth: 600) {
-        ...GatsbyImageSharpFluid_tracedSVG
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
       }
     }
   }
