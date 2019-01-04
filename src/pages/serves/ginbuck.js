@@ -32,9 +32,7 @@ export default ({data}) => (
       <p>Pour one measure of Chinnery Gin (35ml) into a highball glass. Add the juice of half a lime. Fill the glass with ice and top off with ginger ale. Garnish with a wedge of lime or a lime wheel.</p>
       <h2>Notes and variations</h2>
       <ul>
-        <li>There are many ginger ales out there, some with a real kick of ginger, some with the merest nudge. </li>
-        <li>For a garnish you could also try a slice of pink grapefruit, orange or lime with, in season, a sprig of fresh tarragon. Whatever tastes good to you.</li>
-        <li>In our opinion, a highball glass makes for a better G&amp;T than a gin balloon because it fits just enough tonic without drowning the gin.</li>
+        <li>There are many ginger ales out there, some with a real kick of ginger that gets right up your nose, and some that barely whisper. Try a few different varieties to figure out your tolerance for this potent spice.</li>
       </ul>
     </article>
   </Layout>
