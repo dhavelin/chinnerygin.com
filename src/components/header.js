@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { StaticQuery, Link } from "gatsby"
+import { StaticQuery, Link, graphql } from "gatsby"
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import styles from "./header.module.scss"
 
