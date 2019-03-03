@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import Stockist from "../components/stockist"
 import Layout from "../components/layout"
@@ -11,9 +11,10 @@ export default ({data}) => (
       <title>Stockists | Chinnery Gin</title>
       <meta name="Description" content="Where to buy Chinnery Gin." />
     </Helmet>
-    <article>
+    <article className={styles.article}>
       <p className={styles.subtitle}>Stockists</p>
       <h1>Where to buy</h1>
+      <p className={styles.note}>[&#8201;If you are a bar or off-licence looking to stock Chinnery Gin, please <Link to="/sales/">see here</Link>.&#8201;]</p>
       {data.allStockistsJson.edges.map((county, i) =>
         <>
         <h2 className={styles.county} key={i}>{county.node.county}</h2>
