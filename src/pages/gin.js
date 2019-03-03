@@ -79,7 +79,7 @@ export default ({data}) => (
 
       <h2 id="tasting">Tasting notes</h2>
 
-      <p className={styles.byline}>by Rachel Lindsay</p>
+      <p style={{fontStyle: 'italic', marginTop: '-1rem'}}>by Rachel Lindsay</p>
 
       <p><strong>Nose</strong><br />Very floral, leading into hedgerow notes of honeysuckle, wild herbs, cleavers and bramble. Warm fruit, sun-ripened strawberries and rhubarb, petals crushed underfoot and honey. Botanical notes of juniper and coriander, light, clean and summery, like lazy hazy summer evenings, decadent, aromatic and exotic. There is a lovely note of gooseberries with orange zest.</p>
 

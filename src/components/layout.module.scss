@@ -149,11 +149,6 @@ article {
     }
   }
 
-  .byline {
-    font-style: italic;
-    margin-top: -1rem;
-  }
-
   form{
     label {
       font-weight: 400 !important;
@@ -198,6 +193,14 @@ article {
     margin-bottom: 1rem;
     li {
       display: list-item;
+    }
+  }
+  .byline {
+    font-family: 'Spectral SC', serif;
+    font-size: 1.2rem;
+    .author {
+      font-family: 'Spectral', serif;
+      font-style: italic;
     }
   }
 }
