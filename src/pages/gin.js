@@ -83,7 +83,7 @@ export default ({data}) => (
 
       <p><strong>Nose</strong><br />Very floral, leading into hedgerow notes of honeysuckle, wild herbs, cleavers and bramble. Warm fruit, sun-ripened strawberries and rhubarb, petals crushed underfoot and honey. Botanical notes of juniper and coriander, light, clean and summery, like lazy hazy summer evenings, decadent, aromatic and exotic. There is a lovely note of gooseberries with orange zest.</p>
 
-      <p><strong>Palate</strong><br />Rich, creamy and zingy on the palate. Warming and mouth watering, juicy summer fruits and fresh herbal notes coming through. Sweet spicy flavours of clove and cardamon, floral like a sunny wall garden, quite heady, wallflowers and stewed fruits, jam, buttery lemon slices. Really floral, like a fruity summer jelly, or Turkish Delight.</p>
+      <p><strong>Palate</strong><br />Rich, creamy and zingy on the palate. Warming and mouth watering, juicy summer fruits and fresh herbal notes coming through. Sweet spicy flavours of clove and cardamom, floral like a sunny wall garden, quite heady, wallflowers and stewed fruits, jam, buttery lemon slices. Really floral, like a fruity summer jelly, or Turkish Delight.</p>
 
       <p><strong>Finish</strong><br />Crisp, clean and green on the finish, almost Mediterranean, a hint of olives. Very satisfying.</p>
 
