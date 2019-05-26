@@ -18,19 +18,23 @@ function getPosts(data) {
   return posts;
 }
 
-export default ({data}) => (
-  <Layout>
-    <Helmet>
-      <title>Blog | Chinnery Gin</title>
-      <meta name="Description" content="Articles from Chinnery's World." />
-    </Helmet>
-    <article>
-      <p className={styles.subtitle}>Blog</p>
-      <h1>Chinnery's World</h1>
-      { getPosts(data) }
-    </article>
-  </Layout>
-)
+const BlogPage = ({data}) => {
+  return (
+    <Layout>
+      <Helmet>
+        <title>Blog | Chinnery Gin</title>
+        <meta name="Description" content="Articles from Chinnery's World." />
+      </Helmet>
+      <article>
+        <p className={styles.subtitle}>Blog</p>
+        <h1>Chinnery's World</h1>
+        { getPosts(data) }
+      </article>
+    </Layout>
+  )
+}
+
+export default BlogPage
 
 export const postsQuery = graphql`
 query postsQuery {
