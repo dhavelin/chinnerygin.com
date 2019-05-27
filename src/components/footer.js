@@ -3,22 +3,27 @@ import Img from "gatsby-image"
 import { StaticQuery, Link, graphql } from "gatsby"
 import styles from "./footer.module.scss"
 
-export default () => (
-  <>
-    <nav className={styles.menuFooter}>
-      <ul>
-        <li><Link to="/contact/">Contact</Link></li>
-        <li><Link to="/privacy/">Privacy</Link></li>
-        <li><Link to="/company/">Company Details</Link></li>
-        <li><a href="https://www.temperance.ie">Temperance</a></li>
-      </ul>
-    </nav>
-    <div className={styles.logo}>
-      <Link to="/" aria-label="Home page"><Image /></Link>
-    </div>
-    <p className={styles.copyright}>© Chinnery Spirits Ltd 2018</p>
-  </>
-)
+const Footer = () => {
+
+  return (
+    <>
+      <nav className={styles.menuFooter}>
+        <ul>
+          <li><Link to="/contact/">Contact</Link></li>
+          <li><Link to="/privacy/">Privacy</Link></li>
+          <li><Link to="/company/">Company Details</Link></li>
+          <li><a href="https://www.temperance.ie">Temperance</a></li>
+        </ul>
+      </nav>
+      <div className={styles.logo}>
+        <Link to="/" aria-label="Home page"><Image /></Link>
+      </div>
+      <p className={styles.copyright}>© Chinnery Spirits Ltd 2018</p>
+    </>
+  )
+}
+
+export default Footer;
 
 const Image = () => (
   <StaticQuery
