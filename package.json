@@ -3,7 +3,7 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
@@ -28,5 +28,8 @@
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-lincoln": "^0.15.11"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.1"
   }
 }
