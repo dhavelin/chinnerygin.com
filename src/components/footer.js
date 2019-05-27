@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { StaticQuery, Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import styles from "./footer.module.scss"
 
 const Footer = () => {
@@ -25,9 +25,9 @@ const Footer = () => {
 
 export default Footer;
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
+const Image = () => {
+  const { logo } = useStaticQuery(
+    graphql`
       query {
         logo: file(relativePath: { eq: "logo_white.png" }) {
           childImageSharp {
@@ -37,7 +37,9 @@ const Image = () => (
           }
         }
       }
-    `}
-    render={data => <Img fixed={data.logo.childImageSharp.fixed} fadeIn={false} critical/>}
-  />
-)
+    `
+  )
+  return (
+    <Img fixed={logo.childImageSharp.fixed} fadeIn={false} critical/>
+  )
+}

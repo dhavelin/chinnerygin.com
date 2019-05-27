@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { StaticQuery, Link, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import styles from "./header.module.scss"
 
@@ -34,9 +34,9 @@ const Header = () => {
 
 export default Header
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
+const Image = () => {
+  const { logo } = useStaticQuery(
+    graphql`
       query {
         logo: file(relativePath: { eq: "logo_black.png" }) {
           childImageSharp {
@@ -46,7 +46,9 @@ const Image = () => (
           }
         }
       }
-    `}
-    render={data => <Img fixed={data.logo.childImageSharp.fixed} alt="Chinnery Spirits logo"/>}
-  />
-)
+    `
+  )
+  return (
+    <Img fixed={logo.childImageSharp.fixed} alt="Chinnery Spirits logo"/>
+  )
+}
