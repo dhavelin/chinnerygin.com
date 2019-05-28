@@ -1,35 +1,46 @@
-const path = require("path");
+const path = require('path')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+const slugify = require('@sindresorhus/slugify')
 
-  const blogPostTemplate = path.resolve(`src/templates/blog_template.js`);
+module.exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
 
-  return graphql(`
-    {
-      allMarkdownRemark(
-        limit: 100
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ) {
+  if (node.internal.type === 'MarkdownRemark') {
+    const slug = slugify(node.frontmatter.title)
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug
+    })
+  }
+}
+
+module.exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const blogTemplate = path.resolve('./src/templates/blog.js')
+
+  const res = await graphql(`
+    query {
+      allMarkdownRemark {
         edges {
           node {
-            frontmatter {
+            fields {
               slug
             }
           }
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
-    }
+  `)
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.slug,
-        component: blogPostTemplate
-      });
-    });
-  });
-};
+  res.data.allMarkdownRemark.edges.forEach((edge) => {
+    createPage({
+      component: blogTemplate,
+      path: `/blog/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug
+      }
+    })
+  })
+
+}

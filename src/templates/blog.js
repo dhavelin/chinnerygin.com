@@ -5,10 +5,29 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styles from "../components/layout.module.scss"
 
-const BlogPostTemplate = ({ data }) => {
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(
+      fields: {
+        slug: {
+          eq: $slug
+        }
+      }
+    ) {
+      frontmatter {
+        title
+        author
+        date(formatString: "MMMM Do, YYYY")
+      }
+      html
+    }
+  }
+`
+
+const BlogPost = (props) => {
 
     // extract the contents from data
-    const { markdownRemark } = data;
+    const { markdownRemark } = props.data;
     const { frontmatter, html } = markdownRemark;
 
     // return the component layout
@@ -26,17 +45,4 @@ const BlogPostTemplate = ({ data }) => {
       </Layout>
     );
 }
-export default BlogPostTemplate;
-
-export const postDataQuery = graphql`
-query postDataQuery($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        author
-        date(formatString: "MMMM Do, YYYY")
-      }
-    }
-  }
-`
+export default BlogPost;

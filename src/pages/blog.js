@@ -1,24 +1,29 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import styles from "../components/layout.module.scss"
 
-function getPosts(data) {
-  let posts = [];
-  let postsList = data.allMarkdownRemark.edges;
-  postsList.forEach(element => {
-    let postData = element.node.frontmatter;
+const BlogPage = () => {
 
-    posts.push(
-      <Link key={postData.slug} to={`${postData.slug}`}><h2>{postData.title}</h2></Link>
-    );
-  });
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              date
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
 
-  return posts;
-}
-
-const BlogPage = ({data}) => {
   return (
     <Layout>
       <Helmet>
@@ -28,7 +33,18 @@ const BlogPage = ({data}) => {
       <article>
         <p className={styles.subtitle}>Blog</p>
         <h1>Chinnery's World</h1>
-        { getPosts(data) }
+        <ol>
+          {data.allMarkdownRemark.edges.map((edge) => {
+            return (
+              <li>
+                <Link to={`/blog/${edge.node.fields.slug}`}>
+                  <h2>{edge.node.frontmatter.title}</h2>
+                </Link>
+                <p>{edge.node.frontmatter.date}</p>
+              </li>
+            )
+          })}
+        </ol>
       </article>
     </Layout>
   )
@@ -36,6 +52,7 @@ const BlogPage = ({data}) => {
 
 export default BlogPage
 
+/*
 export const postsQuery = graphql`
 query postsQuery {
   allMarkdownRemark (
@@ -52,4 +69,5 @@ query postsQuery {
   }
 }
 `
+*/
 

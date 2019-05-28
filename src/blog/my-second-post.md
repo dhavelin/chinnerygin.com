@@ -1,5 +1,4 @@
 ---
-slug: /blog/my-second-post
 date: 2018-10-27
 author: Jhone Doe
 title: My second blog post on gatsby
