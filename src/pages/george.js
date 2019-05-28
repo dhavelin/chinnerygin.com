@@ -43,10 +43,10 @@ export default GeorgePage
 
 export const query = graphql`
   query {
-    parliament: file(relativePath: { eq: "parliament.jpg" }) {
+    parliament: file(relativePath: { eq: "images/parliament.jpg" }) {
       ...articleImage
     }
-    selfportrait: file(relativePath: { eq: "selfportrait.jpg" }) {
+    selfportrait: file(relativePath: { eq: "images/selfportrait.jpg" }) {
       ...articleImage
     }
   }

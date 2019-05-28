@@ -43,7 +43,7 @@ export default ServePage
 
 export const query = graphql`
   query {
-    hankypanky: file(relativePath: { eq: "serves/ChinneryGinHankyPanky.jpg" }) {
+    hankypanky: file(relativePath: { eq: "images/serves/ChinneryGinHankyPanky.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

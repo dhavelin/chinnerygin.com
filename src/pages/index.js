@@ -25,7 +25,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    bottle: file(relativePath: { eq: "bottle.png" }) {
+    bottle: file(relativePath: { eq: "images/bottle.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG

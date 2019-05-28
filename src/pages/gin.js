@@ -97,43 +97,43 @@ export default GinPage
 
 export const query = graphql`
   query {
-    osmanthus: file(relativePath: { eq: "botanicals/osmanthus.jpg" }) {
+    osmanthus: file(relativePath: { eq: "images/botanicals/osmanthus.jpg" }) {
       ...botanicalImage
     }
 
-    oolong: file(relativePath: { eq: "botanicals/oolong.jpg" }) {
+    oolong: file(relativePath: { eq: "images/botanicals/oolong.jpg" }) {
       ...botanicalImage
     }
 
-    cassia: file(relativePath: { eq: "botanicals/cassia.jpg" }) {
+    cassia: file(relativePath: { eq: "images/botanicals/cassia.jpg" }) {
       ...botanicalImage
     }
 
-    juniper: file(relativePath: { eq: "botanicals/juniper.jpg" }) {
+    juniper: file(relativePath: { eq: "images/botanicals/juniper.jpg" }) {
       ...botanicalImage
     }
 
-    coriander: file(relativePath: { eq: "botanicals/coriander.jpg" }) {
+    coriander: file(relativePath: { eq: "images/botanicals/coriander.jpg" }) {
       ...botanicalImage
     }
 
-    liquorice: file(relativePath: { eq: "botanicals/liquorice.jpg" }) {
+    liquorice: file(relativePath: { eq: "images/botanicals/liquorice.jpg" }) {
       ...botanicalImage
     }
 
-    grainsofparadise: file(relativePath: { eq: "botanicals/grainsofparadise.jpg" }) {
+    grainsofparadise: file(relativePath: { eq: "images/botanicals/grainsofparadise.jpg" }) {
       ...botanicalImage
     }
 
-    orange: file(relativePath: { eq: "botanicals/orange.jpg" }) {
+    orange: file(relativePath: { eq: "images/botanicals/orange.jpg" }) {
       ...botanicalImage
     }
 
-    angelica: file(relativePath: { eq: "botanicals/angelica.jpg" }) {
+    angelica: file(relativePath: { eq: "images/botanicals/angelica.jpg" }) {
       ...botanicalImage
     }
 
-    orris: file(relativePath: { eq: "botanicals/orris.jpg" }) {
+    orris: file(relativePath: { eq: "images/botanicals/orris.jpg" }) {
       ...botanicalImage
     }
   }

@@ -43,7 +43,7 @@ export default ServePage
 
 export const query = graphql`
   query {
-    martini: file(relativePath: { eq: "serves/ChinneryGinMartini.jpg" }) {
+    martini: file(relativePath: { eq: "images/serves/ChinneryGinMartini.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

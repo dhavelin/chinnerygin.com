@@ -64,27 +64,27 @@ export default ServesPage
 
 export const query = graphql`
   query {
-    neat: file(relativePath: { eq: "serves/ChinneryGinNeat.jpg" }) {
+    neat: file(relativePath: { eq: "images/serves/ChinneryGinNeat.jpg" }) {
       ...botanicalImage
     }
 
-    ginandtonic: file(relativePath: { eq: "serves/ChinneryGinAndTonic.jpg" }) {
+    ginandtonic: file(relativePath: { eq: "images/serves/ChinneryGinAndTonic.jpg" }) {
       ...botanicalImage
     }
 
-    ginbuck: file(relativePath: { eq: "serves/ChinneryGinBuck.jpg" }) {
+    ginbuck: file(relativePath: { eq: "images/serves/ChinneryGinBuck.jpg" }) {
       ...botanicalImage
     }
 
-    martini: file(relativePath: { eq: "serves/ChinneryGinMartini.jpg" }) {
+    martini: file(relativePath: { eq: "images/serves/ChinneryGinMartini.jpg" }) {
       ...botanicalImage
     }
 
-    hankypanky: file(relativePath: { eq: "serves/ChinneryGinHankyPanky.jpg" }) {
+    hankypanky: file(relativePath: { eq: "images/serves/ChinneryGinHankyPanky.jpg" }) {
       ...botanicalImage
     }
 
-    hotpunch: file(relativePath: { eq: "serves/ChinneryGinHotPunch.jpg" }) {
+    hotpunch: file(relativePath: { eq: "images/serves/ChinneryGinHotPunch.jpg" }) {
       ...botanicalImage
     }
   }

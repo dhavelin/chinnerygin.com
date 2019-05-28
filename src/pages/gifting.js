@@ -37,10 +37,10 @@ export default GiftingPage
 
 export const query = graphql`
   query {
-    bottle: file(relativePath: { eq: "bottle.png" }) {
+    bottle: file(relativePath: { eq: "images/bottle.png" }) {
       ...productImage
     }
-    box: file(relativePath: { eq: "box.png" }) {
+    box: file(relativePath: { eq: "images/box.png" }) {
       ...productImage
     }
   }

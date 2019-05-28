@@ -42,7 +42,7 @@ export default ServePage
 
 export const query = graphql`
   query {
-    ginneat: file(relativePath: { eq: "serves/ChinneryGinNeat.jpg" }) {
+    ginneat: file(relativePath: { eq: "images/serves/ChinneryGinNeat.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

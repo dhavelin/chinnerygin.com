@@ -48,7 +48,7 @@ export default ServePage
 
 export const query = graphql`
   query {
-    hotpunch: file(relativePath: { eq: "serves/ChinneryGinHotPunch.jpg" }) {
+    hotpunch: file(relativePath: { eq: "images/serves/ChinneryGinHotPunch.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG

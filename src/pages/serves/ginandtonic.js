@@ -45,7 +45,7 @@ export default ServePage
 
 export const query = graphql`
   query {
-    ginandtonic: file(relativePath: { eq: "serves/ChinneryGinAndTonic.jpg" }) {
+    ginandtonic: file(relativePath: { eq: "images/serves/ChinneryGinAndTonic.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_tracedSVG
