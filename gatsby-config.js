@@ -22,6 +22,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-datocms',
+      options: {
+        apiToken: process.env.DATOCMS_API_TOKEN,
+        preview: false,
+        disableLiveReload: false,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
