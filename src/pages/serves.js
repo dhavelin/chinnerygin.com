@@ -1,11 +1,40 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 import Img from "gatsby-image"
 
-const ServesPage = ({data}) => {
+const ServesPage = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      neat: file(relativePath: { eq: "images/serves/ChinneryGinNeat.jpg" }) {
+        ...botanicalImage
+      }
+
+      ginandtonic: file(relativePath: { eq: "images/serves/ChinneryGinAndTonic.jpg" }) {
+        ...botanicalImage
+      }
+
+      ginbuck: file(relativePath: { eq: "images/serves/ChinneryGinBuck.jpg" }) {
+        ...botanicalImage
+      }
+
+      martini: file(relativePath: { eq: "images/serves/ChinneryGinMartini.jpg" }) {
+        ...botanicalImage
+      }
+
+      hankypanky: file(relativePath: { eq: "images/serves/ChinneryGinHankyPanky.jpg" }) {
+        ...botanicalImage
+      }
+
+      hotpunch: file(relativePath: { eq: "images/serves/ChinneryGinHotPunch.jpg" }) {
+        ...botanicalImage
+      }
+    }
+  `)
+
   return (
     <Layout>
       <Head title="Serves" description="How to serve Chinnery Gin in various cocktails."/>
@@ -58,41 +87,3 @@ const ServesPage = ({data}) => {
 }
 
 export default ServesPage
-
-export const query = graphql`
-  query {
-    neat: file(relativePath: { eq: "images/serves/ChinneryGinNeat.jpg" }) {
-      ...botanicalImage
-    }
-
-    ginandtonic: file(relativePath: { eq: "images/serves/ChinneryGinAndTonic.jpg" }) {
-      ...botanicalImage
-    }
-
-    ginbuck: file(relativePath: { eq: "images/serves/ChinneryGinBuck.jpg" }) {
-      ...botanicalImage
-    }
-
-    martini: file(relativePath: { eq: "images/serves/ChinneryGinMartini.jpg" }) {
-      ...botanicalImage
-    }
-
-    hankypanky: file(relativePath: { eq: "images/serves/ChinneryGinHankyPanky.jpg" }) {
-      ...botanicalImage
-    }
-
-    hotpunch: file(relativePath: { eq: "images/serves/ChinneryGinHotPunch.jpg" }) {
-      ...botanicalImage
-    }
-  }
-`
-
-export const serveImage = graphql`
-  fragment serveImage on File {
-    childImageSharp {
-      fixed(width: 300) {
-        ...GatsbyImageSharpFixed
-      }
-    }
-  }
-`
