@@ -1,6 +1,6 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 var width = {
@@ -17,10 +17,7 @@ var position = {
 const NewsletterPage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Newsletter | Chinnery Gin</title>
-        <meta name="Description" content="Subscribe to our newsletter to get the latest news from the world of Chinnery Gin - upcoming events, new products, new articles on the blog, etc." />
-      </Helmet>
+      <Head title="Newsletter" description="Subscribe to our newsletter to get the latest news from the world of Chinnery Gin - upcoming events, new products, new articles on the blog, etc."/>
       <article>
         <p className={styles.subtitle}>Stay in touch</p>
         <h1>Newsletter</h1>

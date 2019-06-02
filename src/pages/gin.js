@@ -1,17 +1,14 @@
 import React from "react"
 import { graphql } from 'gatsby'
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 import Img from "gatsby-image"
 
 const GinPage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>About the gin | Chinnery Gin</title>
-        <meta name="Description" content="About Chinnery Gin, the botanicals used - osmanthus, oolong, cassia, juniper, coriander, liquorice, orange peel, grains of paradise, angelica, orris - how it's distilled and tasting notes." />
-      </Helmet>
+      <Head title="About the gin" description="About Chinnery Gin, the botanicals used - osmanthus, oolong, cassia, juniper, coriander, liquorice, orange peel, grains of paradise, angelica, orris - how it's distilled and tasting notes."/>
       <article>
         <p className={styles.subtitle}>The Gin</p>
         <h1>Chinnery Gin</h1>

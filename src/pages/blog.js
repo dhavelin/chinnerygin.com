@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 const BlogPage = () => {
@@ -26,10 +26,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Blog | Chinnery Gin</title>
-        <meta name="Description" content="Articles from Chinnery's World." />
-      </Helmet>
+      <Head title="Blog" description="Articles from Chinnery's World."/>
       <article>
         <p className={styles.subtitle}>Blog</p>
         <h1>Chinnery's World</h1>

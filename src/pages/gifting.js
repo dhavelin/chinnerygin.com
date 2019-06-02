@@ -1,18 +1,14 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 const GiftingPage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Corporate Gifts | Chinnery Gin</title>
-        <meta name="Description" content="The gift of a bottle of Chinnery Gin to valued colleagues and clients this Christmas." />
-        <meta name="robots" content="noindex" />
-      </Helmet>
+      <Head title="Corporate Gifts" description="The gift of a bottle of Chinnery Gin to valued colleagues and clients this Christmas." noindex="true"/>
       <article>
         <p className={styles.subtitle}>Corporate Gifts</p>
         <h1>Chinnery Gin</h1>

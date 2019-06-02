@@ -1,15 +1,11 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
-
+import Head from "../components/head"
 
 const ContactPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Contact us | Chinnery Gin</title>
-        <meta name="Description" content="We welcome comments and questions by email (or post)." />
-      </Helmet>
+      <Head title="Contact us" description="We welcome comments and questions by email (or post)."/>
       <article>
         <h1>Contact Us</h1>
         <div id="content">

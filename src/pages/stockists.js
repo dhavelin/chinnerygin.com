@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { Helmet } from "react-helmet"
 import Stockist from "../components/stockist"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 const StockistsPage = () => {
@@ -38,10 +38,7 @@ const StockistsPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Stockists | Chinnery Gin</title>
-        <meta name="Description" content="Where to buy Chinnery Gin." />
-      </Helmet>
+      <Head title="Stockists" description="Where to buy Chinnery Gin."/>
       <article className={styles.article}>
         <p className={styles.subtitle}>Stockists</p>
         <h1>Where to buy</h1>

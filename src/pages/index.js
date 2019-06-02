@@ -1,17 +1,14 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 const IndexPage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Chinnery Gin</title>
-        <meta name="Description" content="Chinnery Gin captures the Old China Trade in a bottle. Catch the wonderfully fragrant aroma of osmanthus flowers—the scent of Canton itself. Taste the gin and experience the flavours of the Old China Trade, from spicy cassia bark to a very special single variety of oolong tea." />
-      </Helmet>
+      <Head title="Home" description="Chinnery Gin captures the Old China Trade in a bottle. Catch the wonderfully fragrant aroma of osmanthus flowers—the scent of Canton itself. Taste the gin and experience the flavours of the Old China Trade, from spicy cassia bark to a very special single variety of oolong tea."/>
       <div className={styles.frontmain}>
         <div className={styles.frontimage}>
           <Img fluid={data.bottle.childImageSharp.fluid} />

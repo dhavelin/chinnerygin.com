@@ -1,14 +1,11 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 const CompanyPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Company details | Chinnery Gin</title>
-        <meta name="Description" content="Chinnery Spirits Ltd is a registered company in Ireland." />
-      </Helmet>
+      <Head title="Company details" description="Chinnery Spirits Ltd is a registered company in Ireland."/>
       <article>
         <h1>Company Details</h1>
         <div id="content"><p>Chinnery Spirits Ltd is a registered company in Ireland.</p>

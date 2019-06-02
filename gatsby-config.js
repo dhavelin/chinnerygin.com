@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Chinnery Gin'
+  },
   plugins: [
     'gatsby-transformer-json',
     {
@@ -34,5 +37,5 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet'
-  ],
+  ]
 }

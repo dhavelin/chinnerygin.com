@@ -1,17 +1,14 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 import Img from "gatsby-image"
 
 const ServesPage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>Serves | Chinnery Gin</title>
-        <meta name="Description" content="How to serve Chinnery Gin in various cocktails." />
-      </Helmet>
+      <Head title="Serves" description="How to serve Chinnery Gin in various cocktails."/>
       <article>
         <p className={styles.subtitle}>The Gin</p>
         <h1>Suggested Serves</h1>

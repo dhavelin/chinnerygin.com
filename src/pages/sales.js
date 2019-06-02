@@ -1,15 +1,12 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 
 const SalesPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Sales | Chinnery Gin</title>
-        <meta name="Description" content="Contact our sales team for information on how to stock Chinnery Gin." />
-      </Helmet>
+      <Head title="Sales" description="Contact our sales team for information on how to stock Chinnery Gin."/>
       <article className={styles.article}>
         <h1>Sales</h1>
         <div id="content">

@@ -1,18 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import Head from "../components/head"
 import styles from "../components/layout.module.scss"
 import Quote from "../components/quote"
 
 const GeorgePage = ({data}) => {
   return (
     <Layout>
-      <Helmet>
-        <title>George Chinnery, artist | Chinnery Gin</title>
-        <meta name="Description" content="About the artist, George Chinnery. His early career in Dublin, his travels to India and southern China, his importance in documenting the Old China Trade." />
-      </Helmet>
+      <Head title="George Chinnery, artist" description="About the artist, George Chinnery. His early career in Dublin, his travels to India and southern China, his importance in documenting the Old China Trade."/>
       <article className={styles.article}>
         <p className={styles.subtitle}>The Artist</p>
         <h1>George Chinnery</h1>

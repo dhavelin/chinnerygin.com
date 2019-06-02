@@ -1,15 +1,12 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 const PrivacyPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Privacy statement | Chinnery Gin</title>
-        <meta name="Description" content="Chinnery Spirits respects your right to privacy." />
-      </Helmet>
+      <Head title="Privacy statement" description="Chinnery Spirits respects your right to privacy."/>
       <article>
         <h1>Privacy Policy</h1>
         <p>This Privacy Policy describes how your personal information is collected and used when you visit <a href="https://www.chinnerygin.com">https://www.chinnerygin.com</a> (the “Site”).</p>
