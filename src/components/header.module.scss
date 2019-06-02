@@ -1,5 +1,5 @@
 .logo {
-  margin: 16px 16px 0 16px;
+  margin: 12px;
   a {
     display: block;
   }
@@ -13,22 +13,48 @@ li {
 }
 .menuMain {
   text-align: center;
-  margin-top: 16px;
   line-height: 2.0;
+  margin: 0 12px;
   li {
     padding: 0 8px;
-    a {
-    }
-  }
-}
-.menuSocial {
-  margin-top: 16px;
-  li {
-    padding: 0 4px;
   }
 }
 nav li a.current {
   text-decoration: underline;
 }
 
+$colorBase: #8a8068;
 
+// Mixins
+@mixin transition ($prop: all, $time: 1s, $ease: linear) {
+	-webkit-transition: $prop $time $ease;
+	-moz-transition: $prop $time $ease;
+	-o-transition: $prop $time $ease;
+	-ms-transition: $prop $time $ease;
+	transition: $prop $time $ease;
+}
+
+.social {
+  margin: 12px;
+  text-align: center;
+  color: $colorBase;
+  ul {
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			a {
+				display: block;
+				margin: 0 5px;
+				text-decoration: none;
+        @include transition(all, 0.2s, ease-in);
+				&:hover {
+					color: darken($colorBase, 20%);
+				}
+				&:focus, &:active {
+          transition: none;
+          color: darken($colorBase, 40%);
+				}
+			}
+		}
+	}
+}

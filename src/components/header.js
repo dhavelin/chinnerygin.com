@@ -8,9 +8,7 @@ const Header = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Link to="/" aria-label="Home page">
-          <Image />
-        </Link>
+        <Link to="/" aria-label="Home page"><Image /></Link>
       </div>
       <nav className={styles.menuMain}>
         <ul>
@@ -21,11 +19,11 @@ const Header = () => {
           <li><Link to="/serves/" activeClassName={styles.current}>Serves</Link></li>
         </ul>
       </nav>
-      <nav className={styles.menuSocial}>
+      <nav className={styles.social}>
         <ul>
-          <li><a href="https://www.facebook.com/chinnerygin" aria-label="Facebook">< FaFacebook /></a></li>
-          <li><a href="https://www.instagram.com/chinnerygin" aria-label="Instagram">< FaInstagram /></a></li>
-          <li><a href="https://www.twitter.com/chinnerygin" aria-label="Twitter">< FaTwitter /></a></li>
+          <li><a href="https://www.twitter.com/chinnerygin" aria-label="Twitter">< FaTwitter size={32}/></a></li>
+          <li><a href="https://www.facebook.com/chinnerygin" aria-label="Facebook">< FaFacebook size={32} /></a></li>
+          <li><a href="https://www.instagram.com/chinnerygin" aria-label="Instagram">< FaInstagram size={32} /></a></li>
         </ul>
       </nav>
     </>
@@ -49,6 +47,6 @@ const Image = () => {
     `
   )
   return (
-    <Img fixed={logo.childImageSharp.fixed} alt="Chinnery Spirits logo"/>
+    <Img fixed={logo.childImageSharp.fixed} style={{display:'block'}} alt="Chinnery Spirits logo"/>
   )
 }
