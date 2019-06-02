@@ -15,6 +15,7 @@ const Head = ({ title, description, noindex = false }) => {
   `)
   return (
     <Helmet>
+      <html lang="en" />
       <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
       <meta name="Description" content={`${description}`} />
       { noindex && <meta name="robots" content="noindex" />}
