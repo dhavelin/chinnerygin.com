@@ -28,8 +28,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-typography": "^0.16.19",
-    "typography": "^0.16.19",
-    "typography-theme-lincoln": "^0.15.11"
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "env-cmd": "^9.0.1"
