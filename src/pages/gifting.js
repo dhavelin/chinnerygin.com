@@ -22,7 +22,7 @@ const GiftingPage = ({data}) => {
         <figure className={styles.center}>
           <Img fixed={data.box.childImageSharp.fixed} />
         </figure>
-        <p>An outer box is available from the first week in December.</p>
+        <p>Each bottle comes with an elegant outer box.</p>
         <p>To order, contact Marie Byrne:<br />Email: marie@chinneryspirits.com<br />Tel: 087 900 5085<br />Minimum order 18 bottles (3 cases). Volume discounts available.</p>
       </article>
     </Layout>

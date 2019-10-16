@@ -17,6 +17,7 @@ const Header = () => {
           <li><Link to="/newsletter/" activeClassName={styles.current}>Newsletter</Link></li>
           <li><Link to="/stockists/" activeClassName={styles.current}>Stockists</Link></li>
           <li><Link to="/serves/" activeClassName={styles.current}>Serves</Link></li>
+          <li><Link to="/gifting/" activeClassName={styles.current}>Gifting</Link></li>
         </ul>
       </nav>
       <nav className={styles.social}>
