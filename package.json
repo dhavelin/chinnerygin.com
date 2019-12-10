@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "chinnery-gin",
+  "description": "Chinnery Gin website",
   "license": "MIT",
   "scripts": {
     "develop": "env-cmd -f .env.development gatsby develop",
