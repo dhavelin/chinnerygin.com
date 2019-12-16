@@ -26,7 +26,7 @@ const HampersPage = () => {
 
   return (
     <Layout>
-      <Head title="Serves" description="How to serve Chinnery Gin in various cocktails."/>
+      <Head title="Hampers" description="Where to buy your Chinnery Gin hamper this Christmas."/>
       <article className={styles.article}>
         <p className={styles.subtitle}>Christmas Gifts</p>
         <h1>Hampers</h1>
