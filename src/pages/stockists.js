@@ -43,6 +43,7 @@ const StockistsPage = () => {
         <p className={styles.subtitle}>Stockists</p>
         <h1>Where to buy</h1>
         <p className={styles.note}>[&#8201;If you are a bar or off-licence looking to stock Chinnery Gin, please <Link to="/sales/">see here</Link>.&#8201;]</p>
+        <p>If you are seeking Christmas hampers featuring Chinnery Gin, many off-licences can make them up for you on request. We have gathered a few examples on our <Link to="/hampers/">hampers page</Link>.</p>
         {
           data.allDatoCmsStockist.group.map((countyGroup, i) =>
             <>
