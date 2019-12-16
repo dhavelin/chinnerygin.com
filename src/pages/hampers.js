@@ -36,7 +36,7 @@ const HampersPage = () => {
 
         <p>Each hamper contains a 70cl bottle of Chinnery Dublin Dry Gin, two bottles of premium Poacher’s “Wild” Tonic, new Lismore Dark Chocolate Apple Sticks and a luxury candle from Irish brand Purcell &amp; Woodcock.</p>
         <a href="https://wineonline.ie/collections/chinnery-spirits/products/the-chinnery-gin-hamper">
-          <figure style={{textAlign: "center"}}>
+          <figure style={{textAlign: "center", marginLeft: 0, marginRight: 0}}>
             <Img fixed={data.wineonline.childImageSharp.fixed} />
           </figure>
         </a>
@@ -45,7 +45,7 @@ const HampersPage = () => {
 
         <p>Each hamper contains one bottle of Chinnery Gin, 2 Chinnery Gin glasses, 4 bottles of premium tonic and 3 types of garnish. All packed into a cardboard, wrapped hamper.</p>
         <a href="https://57theheadline.com/product/gin-hampers/">
-          <figure style={{textAlign: "center"}}>
+          <figure style={{textAlign: "center", marginLeft: 0, marginRight: 0}}>
             <Img fixed={data.headline.childImageSharp.fixed} />
           </figure>
         </a>
@@ -55,7 +55,7 @@ const HampersPage = () => {
 
         <p>Each hamper contains one bottle of Chinnery Gin, 3 bottles of Poachers Wild tonic and a Gin Fusion Kit.</p>
         <a href="https://57theheadline.com/product/gin-hampers/">
-          <figure style={{textAlign: "center"}}>
+          <figure style={{textAlign: "center", marginLeft: 0, marginRight: 0}}>
             <Img fixed={data.baggotstreet.childImageSharp.fixed} />
           </figure>
         </a>
