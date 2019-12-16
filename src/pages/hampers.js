@@ -73,7 +73,7 @@ export default HampersPage
 export const hamperImage = graphql`
   fragment hamperImage on File {
     childImageSharp {
-      fixed(width: 500) {
+      fixed(width: 300) {
         ...GatsbyImageSharpFixed
       }
     }
